@@ -5,7 +5,50 @@
 }
 
 .container {
-  width: 1020px;
+  width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/*** Gallery ***/
+.gallery {
+  overflow: hidden;
+  display: grid;
+  /* grid-template-columns: 505px 190px 295px 190px; */
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 170px);
+  gap: 20px;
+}
+
+.gallery__item-1 {
+  background: url("../img/gallery-images/1.jpg") -236px bottom no-repeat;
+  grid-row: 1 / span 3;
+}
+.gallery__item-2 {
+  background: url("../img/gallery-images/2.jpg") center no-repeat;
+}
+.gallery__item-3 {
+  background: url("../img/gallery-images/3.jpg") center no-repeat;
+  grid-row: 2 / span 2;
+}
+.gallery__item-4 {
+  background: url("../img/gallery-images/4.jpg") -195px center no-repeat;
+  grid-row: 1 / span 2;
+}
+.gallery__item-5 {
+  background: url("../img/gallery-images/5.jpg") center no-repeat;
+  grid-area: 3 / 3 / 4 / 4;
+}
+.gallery__item-6 {
+  background: url("../img/gallery-images/6.jpg") center no-repeat;
+}
+.gallery__item-7 {
+  background: url("../img/gallery-images/7.jpg") center no-repeat;
+}
+.gallery__item-8 {
+  background: url("../img/gallery-images/8.jpg") center no-repeat;
+}
+
+.gallery__item {
+  background-size: cover;
 }
